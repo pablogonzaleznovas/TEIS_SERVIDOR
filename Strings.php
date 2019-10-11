@@ -1,4 +1,5 @@
 <?php
+dfgdfg
 
 $texto="hola mundo";
 $salida="";
