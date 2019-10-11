@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+body, html {
+	margin: 2px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+}
+ 
+.enunciados {
+	margin: 2px;
+	padding-top: 2px;
+	color:darkblue;
+	font-family: "Latin Modern Roman";
+ 	font-style: oblique;
+	font-size: 30;
+	text-align:left;
+	font-weight: 900; 
+	
+}
+ 
+#tex {
+  padding-top: 0.2em;
+  background-color: #FFF;
+}
+ 
+#vector {
+	height: 100%;
+	width: 100%;
+}
+ 
