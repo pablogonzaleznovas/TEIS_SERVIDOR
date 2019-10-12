@@ -1,5 +1,5 @@
 <?php
-dfgdfg
+#por si funciona OK
 
 $texto="hola mundo";
 $salida="";
