@@ -11,9 +11,9 @@ for ($i=0; $i <strlen($texto) ; $i++) {
         $salida[$i]=$texto[$i];
     }
 }
-echo "Tras realizar los cambios el resultado es: $salida <br/>";
-
-
-
+echo "a) transforme unha cadea en maiúsculas $nsbp".strtoupper($texto)."<br/>";
+echo "b) transforme unha cadea en minúsculas: $nsbp".strtolower($texto)."<br/>";
+echo "c) converte a primeira letra da oración en maiúscula: $nsbp". ucfirst($texto)."<br/>";
+echo "d) converte a primeira letra de cada palabra da oración a maiúsculas: $nsbp".ucwords($texto)."<br/>";
 
 ?>

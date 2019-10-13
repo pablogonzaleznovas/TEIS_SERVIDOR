@@ -152,11 +152,10 @@ $sum=0;
 
 <div class="enunciados"><br/>12. 	<br/><br/></div>
 <?php
-
+#por si funciona OK
 
 
 ?>
-
 <div class="enunciados"><br/>13.
 <br> Crea 4 funciones para cada funcionalidad. <br/>
 <br> a) transforme unha cadea en maiúsculas <br/>
@@ -165,7 +164,20 @@ $sum=0;
 <br> d) converte a primeira letra de cada palabra da oración a maiúsculas<br/>
 <br> La página tendrá un único input para la cadena, el modo de elegir la funcionalidad es abierto (botones, un selector…) 	<br/><br/></div>
 <?php
-
+$texto="hola mundo";
+$salida="";
+echo "El texto inicial que fue introducido es: $texto <br/>";
+for ($i=0; $i <strlen($texto) ; $i++) {
+    if ($texto[$i]==" ") {
+        $salida[$i]="*";      
+    }else{
+        $salida[$i]=$texto[$i];
+    }
+}
+echo "a) transforme unha cadea en maiúsculas $nsbp".strtoupper($texto)."<br/>";
+echo "b) transforme unha cadea en minúsculas: $nsbp".strtolower($texto)."<br/>";
+echo "c) converte a primeira letra da oración en maiúscula: $nsbp". ucfirst($texto)."<br/>";
+echo "d) converte a primeira letra de cada palabra da oración a maiúsculas: $nsbp".ucwords($texto)."<br/>";
 	
 	
 ?>
