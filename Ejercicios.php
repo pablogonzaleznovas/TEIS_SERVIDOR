@@ -216,9 +216,29 @@ if (strlen($hora2)==6){
 <div class="enunciados"><br/>15.Comprobe se unha cadea está contida dentro doutra cadea
 Exemplo de entrada : 'A galiña azul salta sobre o seu niño' --> Comprobas se conten a palabra ‘salta’ <br/><br/></div>
 <?php
-	
-	
-	
+    $cadena4="A galiña azul salta sobre o seu niño";
+    $buscar="salta";
+    $pos = strpos($cadena4, $buscar);
+	if ($pos !== false) {
+        echo "La cadena '$buscar' fue encontrada en la cadena '$cadena4'";
+            echo " y existe en la posición $pos <br/>";
+   } else {
+        echo "La cadena '$buscar' no fue encontrada en la cadena '$cadena4' <br/>";
+   }
+   $repe=0;
+   $count=0;
+   $pos2=0;
+   $buscar2="o";
+   while ($count< strlen($cadena4)){
+       
+        $pos2 = strpos($cadena4, $buscar2,$count);
+        if ($pos2 === false) {
+            break;
+        }
+        $repe= $repe + 1;
+        $count=$pos2 +1;
+   }
+   echo "a ver si mostra algo: $repe";
 ?>
 	
 <div class="enunciados"><br/>16. Extraia o nome do ficheiro dunha ruta.

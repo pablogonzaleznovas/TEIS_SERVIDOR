@@ -30,6 +30,9 @@ for ($i=0; $i <strlen($hora) ; $i++) {
     }
 echo "Tras realizar los cambios, la hora formateada es: &nbsp $horaOK. <br/>";
 */
+
+////
+/////
 $hora2="246061";
 $horaOK2="";
 if (strlen($hora2)==6){
